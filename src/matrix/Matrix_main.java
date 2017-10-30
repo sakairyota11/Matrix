@@ -10,6 +10,7 @@ public class Matrix_main {
         double b[][] = { { 1, -1, 2 }, { 3, 0, 4 } };
         Matrix_lib mlib = new Matrix_lib(a, b);
         System.out.println("Product = "+Arrays.deepToString(mlib.getProduct()));
+        System.out.println("Transepose ="+Arrays.deepToString(mlib.getTransepose(b)));
 	}
 
 }
