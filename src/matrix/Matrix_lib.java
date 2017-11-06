@@ -86,4 +86,15 @@ public class Matrix_lib {
 		return answer;
 	}
 	
+	public double [] getSolution(double [][] a, double [] b) {
+	    double answer[] = new double [a.length];
+	    double inv[][] = this.getInverse(a);
+	    for(int i = 0; i < a.length; i++) {
+	    	for(int j = 0; j < a.length; j++) {
+	    		answer[i] += inv[i][j] * b[j];
+	    	}
+	    }
+		return answer;
+	}
+	
 }
